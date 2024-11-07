@@ -67,7 +67,7 @@ const App = () => {
   //fetch default city(Colombo) weather data on initial render
   useEffect(()=>{
     const defaultCity= "Colombo";
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_Key}&q=${defaultCity}&days=2`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_Key}&q=${defaultCity}&days=2`;
     getWeatherDetails(API_URL);
 
   },[API_Key]);
